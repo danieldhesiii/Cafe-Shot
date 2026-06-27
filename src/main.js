@@ -4,7 +4,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Splitting from 'splitting'
 import Swiper from 'swiper'
-import { Autoplay, FreeMode } from 'swiper/modules'
+import { Autoplay, FreeMode, Manipulation } from 'swiper/modules'
 import 'swiper/css'
 
 import { business, hours, menu, reviews, gallery } from './data.js'
@@ -126,10 +126,10 @@ function reviewSlide(r, isNew = false) {
 track.innerHTML = reviews.map((r) => reviewSlide(r)).join('')
 
 const reviewSwiper = new Swiper('.reviews__swiper', {
-  modules: [Autoplay, FreeMode],
+  modules: [Autoplay, FreeMode, Manipulation],
   slidesPerView: 1.1,
   spaceBetween: 16,
-  loop: reviews.length > 3,
+  rewind: true, // loops back to the start without the loop-mode slide cloning
   grabCursor: true,
   freeMode: { enabled: true, momentum: true },
   autoplay: reduceMotion ? false : { delay: 2600, disableOnInteraction: false, pauseOnMouseEnter: true },
@@ -204,8 +204,7 @@ form.addEventListener('submit', (e) => {
   const slideHtml = reviewSlide({ name, stars: chosenStars, text }, true)
   reviewSwiper.prependSlide(slideHtml)
   reviewSwiper.update()
-  if (reviewSwiper.params.loop) reviewSwiper.slideToLoop(0, 600)
-  else reviewSwiper.slideTo(0, 600)
+  reviewSwiper.slideTo(0, 600)
 
   form.reset()
   chosenStars = 0
