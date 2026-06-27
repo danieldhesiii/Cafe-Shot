@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Café Shot — a friendly coffee shop on Brentwood Road, Hornchurch. Fresh breakfasts, proper coffee, homemade cakes. Eat in, collection or delivery." />
+    <meta name="theme-color" content="#f5efe6" />
+    <meta property="og:title" content="Café Shot — Hornchurch coffee shop" />
+    <meta property="og:description" content="Proper coffee and a proper breakfast on Brentwood Road, Hornchurch." />
+    <meta property="og:type" content="restaurant.restaurant" />
+    <title>Café Shot — Coffee Shop in Hornchurch</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#menu">Skip to menu</a>
+
+    <!-- ── Header / Nav ─────────────────────────────────────────────── -->
+    <header class="nav" id="top">
+      <div class="nav__inner">
+        <a class="nav__brand" href="#top" aria-label="Café Shot, home">
+          <span class="nav__mark" aria-hidden="true"></span>
+          <span class="nav__name">Café&nbsp;Shot</span>
+        </a>
+
+        <nav class="nav__links" aria-label="Primary">
+          <a href="#menu">Menu</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#visit">Visit</a>
+        </nav>
+
+        <div class="nav__actions">
+          <a class="btn btn--ghost" data-call href="tel:+441708513238">
+            <i class="ph ph-phone-call" aria-hidden="true"></i>
+            <span>01708&nbsp;513238</span>
+          </a>
+          <a class="btn btn--solid" href="#menu">View menu</a>
+        </div>
+
+        <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+          <i class="ph ph-list" aria-hidden="true"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ── Hero ───────────────────────────────────────────────────── -->
+      <section class="hero">
+        <div class="hero__text">
+          <p class="hero__eyebrow">Hornchurch · Est. on Brentwood Road</p>
+          <h1 class="hero__title" data-splitting>
+            Proper coffee, and a proper breakfast.
+          </h1>
+          <p class="hero__sub">
+            A friendly neighbourhood café. Eggs cooked to order, espresso pulled
+            fresh, cakes made in-house. Eat in, collect or get it delivered.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--solid btn--lg" href="#menu">See the menu</a>
+            <a class="btn btn--line btn--lg" data-call href="tel:+441708513238">
+              <i class="ph ph-phone-call" aria-hidden="true"></i>
+              Call to order
+            </a>
+          </div>
+          <dl class="hero__facts">
+            <div>
+              <dt>Rated</dt>
+              <dd><span class="star">&#9733;</span> 4.7 <span class="muted">· 160 reviews</span></dd>
+            </div>
+            <div>
+              <dt>Open today</dt>
+              <dd>8:00 – 16:00</dd>
+            </div>
+            <div>
+              <dt>Per person</dt>
+              <dd>£1–10</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__media">
+          <img
+            class="hero__img"
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1100&q=80"
+            alt="A flat white coffee on a wooden café table"
+            width="1100" height="1320" loading="eager" fetchpriority="high"
+          />
+          <div class="hero__badge">
+            <span class="hero__badge-k">In the cabinet</span>
+            <span class="hero__badge-v">Baked fresh daily</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Quick info ribbon ──────────────────────────────────────── -->
+      <section class="ribbon" aria-label="At a glance">
+        <a class="ribbon__item" data-call href="tel:+441708513238">
+          <i class="ph ph-phone-call" aria-hidden="true"></i>
+          <span><strong>01708 513238</strong><small>Tap to call</small></span>
+        </a>
+        <a class="ribbon__item" href="#visit">
+          <i class="ph ph-map-pin" aria-hidden="true"></i>
+          <span><strong>78 Brentwood Rd</strong><small>Hornchurch, RM1 2EL</small></span>
+        </a>
+        <a class="ribbon__item" href="#menu">
+          <i class="ph ph-fork-knife" aria-hidden="true"></i>
+          <span><strong>Breakfast & lunch</strong><small>Served all day</small></span>
+        </a>
+        <a class="ribbon__item" href="#visit">
+          <i class="ph ph-moped" aria-hidden="true"></i>
+          <span><strong>Collection & delivery</strong><small>From 8am</small></span>
+        </a>
+      </section>
+
+      <!-- ── Menu ───────────────────────────────────────────────────── -->
+      <section class="menu" id="menu">
+        <header class="section-head">
+          <h2 class="section-title">The menu</h2>
+          <p class="section-lead">
+            Pick a section. Everything is cooked fresh to order, so give us a few
+            minutes and we will bring it over.
+          </p>
+        </header>
+
+        <div class="menu__tabs" role="tablist" aria-label="Menu sections"></div>
+        <div class="menu__panel" id="menu-panel"></div>
+
+        <p class="menu__note">
+          Got a question about an order? <a data-call href="tel:+441708513238">Call us on 01708 513238</a>.
+        </p>
+      </section>
+
+      <!-- ── Gallery ────────────────────────────────────────────────── -->
+      <section class="gallery" id="gallery">
+        <header class="section-head section-head--split">
+          <div>
+            <h2 class="section-title">From the counter</h2>
+            <p class="section-lead">A look at what we have been making lately.</p>
+          </div>
+          <a class="btn btn--line" href="https://www.facebook.com/CafeShotltd/?locale=en_GB" target="_blank" rel="noopener">
+            <i class="ph ph-facebook-logo" aria-hidden="true"></i>
+            Follow on Facebook
+          </a>
+        </header>
+        <div class="gallery__grid" id="gallery-grid"></div>
+      </section>
+
+      <!-- ── Reviews ────────────────────────────────────────────────── -->
+      <section class="reviews" id="reviews">
+        <header class="section-head">
+          <h2 class="section-title">What people say</h2>
+          <p class="section-lead">
+            <span class="star">&#9733;</span> 4.7 from 160 Google reviews. Here is a few of them.
+          </p>
+        </header>
+
+        <div class="swiper reviews__swiper">
+          <div class="swiper-wrapper" id="reviews-track"></div>
+        </div>
+
+        <div class="reviews__cta">
+          <h3>Been in recently?</h3>
+          <p>Leave us a few words. It honestly makes our day.</p>
+          <form class="review-form" id="review-form" novalidate>
+            <div class="field">
+              <label for="rf-name">Your name</label>
+              <input id="rf-name" name="name" type="text" autocomplete="name" required placeholder="e.g. Sam from down the road" />
+              <span class="field__error" data-error-for="name"></span>
+            </div>
+
+            <div class="field">
+              <label for="rf-stars">Your rating</label>
+              <div class="stars-input" id="rf-stars" role="radiogroup" aria-label="Star rating"></div>
+              <span class="field__error" data-error-for="stars"></span>
+            </div>
+
+            <div class="field">
+              <label for="rf-text">Your review</label>
+              <textarea id="rf-text" name="text" rows="3" required placeholder="Tell us what you had and how it was…"></textarea>
+              <span class="field__error" data-error-for="text"></span>
+            </div>
+
+            <div class="review-form__actions">
+              <button class="btn btn--solid" type="submit">Post my review</button>
+              <a class="btn btn--ghost" href="https://www.facebook.com/CafeShotltd/?locale=en_GB" target="_blank" rel="noopener">Or review us on Facebook</a>
+            </div>
+            <p class="review-form__msg" id="review-msg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <!-- ── Visit ──────────────────────────────────────────────────── -->
+      <section class="visit" id="visit">
+        <header class="section-head">
+          <h2 class="section-title">Come and find us</h2>
+          <p class="section-lead">On Brentwood Road, a short walk from Romford town centre.</p>
+        </header>
+
+        <div class="visit__grid">
+          <div class="visit__card">
+            <h3><i class="ph ph-map-pin" aria-hidden="true"></i> Address</h3>
+            <p>78 Brentwood Rd,<br />Hornchurch, Romford<br />RM1 2EL</p>
+            <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Shot+78+Brentwood+Rd+Romford+RM1+2EL" target="_blank" rel="noopener">Get directions</a>
+          </div>
+
+          <div class="visit__card">
+            <h3><i class="ph ph-clock" aria-hidden="true"></i> Opening hours</h3>
+            <dl class="hours" id="hours"></dl>
+          </div>
+
+          <div class="visit__card visit__card--accent">
+            <h3><i class="ph ph-phone-call" aria-hidden="true"></i> Order or ask</h3>
+            <p>Call ahead for collection, or ask about delivery.</p>
+            <a class="btn btn--solid btn--lg" data-call href="tel:+441708513238">01708 513238</a>
+            <a class="visit__fb" href="https://www.facebook.com/CafeShotltd/?locale=en_GB" target="_blank" rel="noopener">
+              <i class="ph ph-facebook-logo" aria-hidden="true"></i> Message us on Facebook
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ── Footer ───────────────────────────────────────────────────── -->
+    <footer class="foot">
+      <div class="foot__inner">
+        <div class="foot__brand">
+          <span class="nav__mark" aria-hidden="true"></span>
+          <span>Café Shot</span>
+        </div>
+        <nav class="foot__links" aria-label="Footer">
+          <a href="#menu">Menu</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#visit">Visit</a>
+          <a data-call href="tel:+441708513238">Call</a>
+        </nav>
+        <p class="foot__addr">78 Brentwood Rd, Hornchurch, Romford RM1 2EL</p>
+      </div>
+      <p class="foot__fine">© <span id="year"></span> Café Shot. Made with care in Hornchurch.</p>
+    </footer>
+
+    <!-- Mobile sticky call bar -->
+    <a class="callbar" data-call href="tel:+441708513238">
+      <i class="ph ph-phone-call" aria-hidden="true"></i> Call Café Shot · 01708 513238
+    </a>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
