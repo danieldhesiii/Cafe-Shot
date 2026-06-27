@@ -223,10 +223,47 @@
     <!-- ── Footer ───────────────────────────────────────────────────── -->
     <footer class="foot">
       <div class="foot__inner">
-        <div class="foot__brand">
-          <span class="nav__mark" aria-hidden="true"></span>
-          <span>Café Shot</span>
+        <div class="foot__map">
+          <iframe
+            title="Map showing Café Shot, 78 Brentwood Road, Hornchurch, Romford RM1 2EL"
+            src="https://maps.google.com/maps?q=78%20Brentwood%20Rd%2C%20Hornchurch%2C%20Romford%20RM1%202EL&z=15&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <a class="foot__map-cta" href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Shot+78+Brentwood+Rd+Romford+RM1+2EL" target="_blank" rel="noopener">
+            <i class="ph ph-navigation-arrow" aria-hidden="true"></i> Get directions
+          </a>
         </div>
+
+        <div class="foot__info">
+          <div class="foot__brandblock">
+            <div class="foot__brand">
+              <span class="nav__mark" aria-hidden="true"></span>
+              <span>Café Shot</span>
+            </div>
+            <p class="foot__tag">Proper coffee and a proper breakfast on Brentwood Road. Eat in, collect or get it delivered.</p>
+            <a class="foot__social" href="https://www.facebook.com/CafeShotltd/?locale=en_GB" target="_blank" rel="noopener">
+              <i class="ph ph-facebook-logo" aria-hidden="true"></i> Café Shot on Facebook
+            </a>
+          </div>
+
+          <div class="foot__cols">
+            <div class="foot__col">
+              <h4>Visit us</h4>
+              <p class="foot__addr">78 Brentwood Rd,<br />Hornchurch, Romford<br />RM1 2EL</p>
+              <a class="foot__phone" data-call href="tel:+441708513238">
+                <i class="ph ph-phone-call" aria-hidden="true"></i> 01708 513238
+              </a>
+            </div>
+
+            <div class="foot__col">
+              <h4>Opening hours</h4>
+              <dl class="foot__hours" id="foot-hours"></dl>
+              <p class="foot__order"><i class="ph ph-moped" aria-hidden="true"></i> Collection &amp; delivery from 8am</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="foot__bar">
         <nav class="foot__links" aria-label="Footer">
           <a href="#menu">Menu</a>
           <a href="#gallery">Gallery</a>
@@ -234,9 +271,8 @@
           <a href="#visit">Visit</a>
           <a data-call href="tel:+441708513238">Call</a>
         </nav>
-        <p class="foot__addr">78 Brentwood Rd, Hornchurch, Romford RM1 2EL</p>
+        <p class="foot__fine">© <span id="year"></span> Café Shot · Made with care in Hornchurch.</p>
       </div>
-      <p class="foot__fine">© <span id="year"></span> Café Shot. Made with care in Hornchurch.</p>
     </footer>
 
     <!-- Mobile sticky call bar -->

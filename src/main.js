@@ -225,6 +225,17 @@ $('#hours').innerHTML = hours.map((h, i) => `
   </div>
 `).join('')
 
+// compact footer hours (uses 3-letter day, today highlighted)
+const footHours = $('#foot-hours')
+if (footHours) {
+  footHours.innerHTML = hours.map((h, i) => `
+    <div class="frow${i === todayIdx ? ' is-today' : ''}">
+      <span class="fday">${esc(h.day.slice(0, 3))}</span>
+      <span>${esc(h.time)}</span>
+    </div>
+  `).join('')
+}
+
 /* ── Scroll reveals (IntersectionObserver, reduced-motion safe) ──────────── */
 const revealEls = [
   ...$$('.section-head'),
