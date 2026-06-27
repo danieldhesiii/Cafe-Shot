@@ -31,7 +31,10 @@ if (!reduceMotion) {
       const target = document.querySelector(id)
       if (!target) return
       e.preventDefault()
-      lenis.scrollTo(target, { offset: -72 })
+      // #top is the sticky header (always at viewport top), so scroll the page
+      // to the very top instead of to the element's on-screen position.
+      if (id === '#top') lenis.scrollTo(0)
+      else lenis.scrollTo(target, { offset: -72 })
       closeNav()
     })
   })
