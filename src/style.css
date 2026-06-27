@@ -168,8 +168,8 @@ section { padding-inline: clamp(1.1rem, 5vw, 3rem); }
 .hero__eyebrow { color: var(--accent-ink); font-weight: 500; font-size: 0.9rem; letter-spacing: 0.04em; margin-bottom: 1rem; }
 .hero__title {
   font-family: var(--font-display); font-weight: 600;
-  font-size: clamp(2.7rem, 6.4vw, 5rem); line-height: 1.0; letter-spacing: -0.015em;
-  max-width: 16ch;
+  font-size: clamp(2.5rem, 5.6vw, 4.4rem); line-height: 1.14; letter-spacing: 0;
+  max-width: 17ch; padding-bottom: 0.1em;
 }
 .hero__sub { color: var(--ink-soft); font-size: 1.13rem; margin-top: 1.3rem; max-width: 46ch; }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.8rem; }
